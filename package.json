@@ -1,6 +1,6 @@
 {
   "name": "event-register",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple browser based custom DOM event proxy with debugging tools and repeat addEventListener protection. It uses an Event Registry to ensure non-duplicate listeners.",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,13 @@
   "author": "Adam Gedney <adam@olympusat.com>",
   "license": "ISC",
   "homepage": "https://github.com/OlympusatDevelopment/event-register",
+  "contributors": [
+    {
+      "name": "Adam Gedney",
+      "email": "adam@olympusat.com",
+      "url": "https://github.com/adamgedney"
+    }
+  ],
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-plugin-transform-react-jsx": "^6.23.0",
