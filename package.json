@@ -1,0 +1,39 @@
+{
+  "name": "event-register",
+  "version": "1.0.0",
+  "description": "A simple browser based custom DOM event proxy with debugging tools and repeat addEventListener protection. It uses an Event Registry to ensure non-duplicate listeners.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch",
+    "release": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OlympusatDevelopment/event-register.git"
+  },
+  "author": "Adam Gedney <adam@olympusat.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/OlympusatDevelopment/event-register",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-cli": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "js-sha256": "^0.9.0",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {}
+}
