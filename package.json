@@ -1,6 +1,6 @@
 {
   "name": "event-register",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple browser based custom DOM event proxy with debugging tools and repeat addEventListener protection. It uses an Event Registry to ensure non-duplicate listeners.",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,6 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
-    "js-sha256": "^0.9.0",
     "uuid": "^3.1.0"
   },
   "peerDependencies": {}

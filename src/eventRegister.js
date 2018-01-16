@@ -1,5 +1,4 @@
 const pjson = require('../package.json');
-import sha256 from 'js-sha256';
 import uuid from 'uuid/v1';
 import { logDebugMessage } from './utils';
 import register from './register';
@@ -54,11 +53,16 @@ class EventRegister {
   }
 
   // Return the full event in case event id tracking is necessary
-  publish(eventName, payload, debug) {
+  publish(eventName, pl, debug) {
+    let payload = Object.assign({}, pl);
     let event = document.createEvent('Event');
+    let meta = payload.erMeta;
+    if (payload.hasOwnProperty('erMeta')) {
+      delete payload.erMeta;
+    }
     let incomingEvent = {
       uuid: uuid(),
-      payloadHash: sha256(JSON.stringify(payload)),
+      meta,
       payload,
       eventName
     };
