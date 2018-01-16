@@ -10,9 +10,8 @@ npm i -S event-register
 ## Import into your project
 Event-register's import returns a Singleton Class so you can access the same register no matter where in your application you import/instantiate it.
 ``` 
-import EventRegister from 'event-register';
+import eventRegister from 'event-register';
 
-const eventRegister = new EventRegister();
 ```
 
 ## Usage

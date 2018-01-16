@@ -8,7 +8,7 @@ let instance = null;
 /**  
  * Using the EventRegister as a Singleton allows the user to include the npm package from anywhere and enable/disbale debugging
 */
-export default class EventRegister {
+class EventRegister {
   constructor() {
     this.history = [];
     this.eventNames = [];
@@ -101,3 +101,5 @@ export default class EventRegister {
     }
   };
 }
+
+export default new EventRegister();
