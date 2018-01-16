@@ -37,6 +37,7 @@ This is how you listen to events coming through the proxy. You can add as many s
 * The first argument is the string name of the event you want to listen to.
 * The second argument is a callback that will be called every time the event is fired.
 * The callback returns the DOM event. A `data.payload` property on the `event.data` property contains your original data.
+* The event also gets assigned a unique id in `event.data.id`
 * if the `erMeta` property was passed in the payload then the event will define a meta property on `event.data.meta` and `erMeta` will be deleted from the payload. This is a convenience passthrough.
 
 ```

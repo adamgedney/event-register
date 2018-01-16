@@ -1,5 +1,5 @@
 const pjson = require('../package.json');
-import uuid from 'uuid/v1';
+import cuid from 'cuid';
 import { logDebugMessage } from './utils';
 import register from './register';
 let instance = null;
@@ -61,7 +61,7 @@ class EventRegister {
       delete payload.erMeta;
     }
     let incomingEvent = {
-      uuid: uuid(),
+      id: cuid(),
       meta,
       payload,
       eventName
