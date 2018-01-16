@@ -22,6 +22,8 @@ export default class EventRegister {
     return instance;
   }
 
+  // monitor = () => { };
+
   getHistory() {
     return this.history;
   }
@@ -35,6 +37,13 @@ export default class EventRegister {
     let eventNames = names
       ? Array.isArray(names) ? names : [names]
       : null;
+
+    // monitor = (name, evt) => {
+    //   (eventNames ? eventNames : this.eventNames)
+    //     .forEach(name => {
+    //       logDebugMessage(name, evt);
+    //     });
+    // }
 
     (eventNames ? eventNames : this.eventNames)
       .forEach(name => {
@@ -63,6 +72,8 @@ export default class EventRegister {
     if (!this.eventNames.includes(eventName)) {
       this.eventNames.push(eventName);
     }
+
+    // monitor(eventName, incomingEvent);
 
     return incomingEvent;
   };
