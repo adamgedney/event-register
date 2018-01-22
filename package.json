@@ -1,6 +1,6 @@
 {
   "name": "event-register",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple browser based custom DOM event proxy with debugging tools and repeat addEventListener protection. It uses an Event Registry to ensure non-duplicate listeners.",
   "main": "index.js",
   "scripts": {

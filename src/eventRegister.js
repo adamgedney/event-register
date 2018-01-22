@@ -85,6 +85,7 @@ class EventRegister {
   // Subscribers can register listeners here
   subscribe(eventName, cb, debug) {
     if (typeof cb !== 'function') { cb = () => { } }
+    if (!eventName) { return false; }
 
     /**
      * IMPORTANT NOTE: By using the stored reference to the eventName instead of the eventName itself, the DOM sees the reference and does NOT add additional event listeners on top of the previous ones.
